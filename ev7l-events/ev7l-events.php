@@ -24,3 +24,20 @@ if ( ! defined( 'WPINC' ) ) {
   die;
 }
 
+// Required files for registering the event post type.
+require plugin_dir_path( __FILE__ ) . 'includes/event/class-post-type.php';
+require plugin_dir_path( __FILE__ ) . 'includes/event/class-post-type-registration.php';
+require plugin_dir_path( __FILE__ ) . 'includes/event/queries.php';
+
+// Instantiate registration class, so we can add it as a dependency to main plugin class.
+$post_type_registration = new EV7L_Event_Post_Type_Registration;
+
+// Instantiate main plugin file, so activation callback does not need to be static.
+$post_type = new EV7L_Event( $post_type_registration );
+
+// Register callback that is fired when the plugin is activated.
+register_activation_hook( __FILE__, array( $post_type, 'activate' ) );
+
+// Initialize registrations for post-activation requests.
+$post_type_registrations->init();
+

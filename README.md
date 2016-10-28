@@ -20,7 +20,7 @@ The plugin ships with a Widget to show events in a list, some query functions to
 
 ## Description
 
-Events, Event Categories and Referees are modeled as Custom Post Types (CPT) with special Custom Fields.
+Events, Event Categories and Referees are modeled as Custom Post Types (CPT) with special Custom Fields (metadata).
 
 Following relationships exist:
   1. Event <-> EventCategory (many-to-many)
@@ -33,7 +33,7 @@ Spelled out:
   - an **Event** can have multiple **Referee**s
   - a **Referee** can have multiple **Event**s
 
-Relationships are modeled with Custom Fields, storing the `Post ID` in a one-way fashion (it sits at the **Event**).  The custom fields are named `event_category_id` and `referee_id`.
+Relationships are modeled with Custom Fields (post metadata), storing the `Post ID` in a one-way fashion (it sits at the **Event**).  The custom fields are named `event_category_id` and `referee_id`.
 
 Common to all three CPTs is an `UUID` field to uniquely identify an entity (but, as mentioned above, the `Post ID` is used for cross-references!).
 

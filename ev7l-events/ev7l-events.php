@@ -41,3 +41,10 @@ register_activation_hook( __FILE__, array( $post_type, 'activate' ) );
 // Initialize registrations for post-activation requests.
 $post_type_registration->init();
 
+// Add some widgets, too.
+require plugin_dir_path( __FILE__ ) . 'includes/widgets/event-list.php';
+add_action('widgets_init',
+  function(){
+      register_widget( 'EventListWidget' );
+  });
+

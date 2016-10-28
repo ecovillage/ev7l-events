@@ -37,6 +37,17 @@ Relationships are modeled with Custom Fields, storing the `Post ID` in a one-way
 
 Common to all three CPTs is an `UUID` field to uniquely identify an entity (but, as mentioned above, the `Post ID` is used for cross-references!).
 
+### CPT ev7l-event
+
+Custom fields:
+
+| Field       | Multiple? | Semantic |
+| ----------- | --------- | -------- |
+| UUID        | false     | Unique identifier |
+| category_id | true      | post id of a event-category |
+| todate      | false     | starting date/time (as unix timestamp) |
+| fromdate    | false     | ending date/time (as unix timestamp) |
+
 ## Development
 
 ### Releases

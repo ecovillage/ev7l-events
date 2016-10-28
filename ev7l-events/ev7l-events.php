@@ -48,3 +48,11 @@ add_action('widgets_init',
       register_widget( 'EventListWidget' );
   });
 
+// Query vars used for calendar view.
+function event_query_vars_filter($vars) {
+  $vars[] = 'eventmonth';
+  $vars[] .= 'eventyear';
+  return $vars;
+}
+add_filter( 'query_vars', 'event_query_vars_filter' );
+

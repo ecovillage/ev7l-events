@@ -29,7 +29,7 @@ Following relationships exist:
 Spelled out:
 
   - an **Event** can have multiple **EventCategory**s
-  - an **EventCategory** can have multiple **Events**
+  - an **EventCategory** can have multiple **Event**s
   - an **Event** can have multiple **Referee**s
   - a **Referee** can have multiple **Event**s
 

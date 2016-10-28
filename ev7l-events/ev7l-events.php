@@ -41,6 +41,25 @@ register_activation_hook( __FILE__, array( $post_type, 'activate' ) );
 // Initialize registrations for post-activation requests.
 $post_type_registration->init();
 
+
+// Required files for registering the event category post type.
+require plugin_dir_path( __FILE__ ) . 'includes/event-category/class-post-type.php';
+require plugin_dir_path( __FILE__ ) . 'includes/event-category/class-post-type-registrations.php';
+
+// Instantiate registration class, so we can add it as a dependency to main plugin class.
+$post_type_registrations_c = new EV7L_Event_Category_Post_Type_Registrations;
+
+// Instantiate main plugin file, so activation callback does not need to be static.
+$post_type_c = new EV7L_Event_Category( $post_type_registrations_c );
+
+// Register callback that is fired when the plugin is activated.
+register_activation_hook( __FILE__, array( $post_type_c, 'activate' ) );
+
+// Initialize registrations for post-activation requests.
+$post_type_registrations_c->init();
+
+
+/** Widgets */
 // Add some widgets, too.
 require plugin_dir_path( __FILE__ ) . 'includes/widgets/event-list.php';
 add_action('widgets_init',

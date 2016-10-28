@@ -39,5 +39,5 @@ $post_type = new EV7L_Event( $post_type_registration );
 register_activation_hook( __FILE__, array( $post_type, 'activate' ) );
 
 // Initialize registrations for post-activation requests.
-$post_type_registrations->init();
+$post_type_registration->init();
 

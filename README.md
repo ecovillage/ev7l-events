@@ -33,10 +33,21 @@ Spelled out:
   - an **Event** can have multiple **Referee**s
   - a **Referee** can have multiple **Event**s
 
-Relationships are modeled with Custom Fields, storing the `Post ID` in a one-way fashion (it sits at the **Event**).
+Relationships are modeled with Custom Fields, storing the `Post ID` in a one-way fashion (it sits at the **Event**).  The custom fields are named `event_category_id` and `referee_id`.
 
 Common to all three CPTs is an `UUID` field to uniquely identify an entity (but, as mentioned above, the `Post ID` is used for cross-references!).
 
+## Development
+
+### Releases
+
+To release a new zip file to be used as uploadable wordpress plugin call `create-wp-plugin-archive.sh`.  The script will create a zip file which contains the last (git) *tag name* in its name.
+
+To release a new version follow these steps:
+
+  * modify ev7l-events/ev7l-events.php to to use the correct version numner.
+  * e.g. `git tag -a "v0.2.0" -m "v0.2.0"`
+  * `./create-wp-plugin-archive.sh`
 
 ## Lessons learned
 

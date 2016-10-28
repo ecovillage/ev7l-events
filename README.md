@@ -4,6 +4,8 @@ Event model as wordpress plugin for ecovillage Sieben Linden homepage (siebenlin
 
 Its functionality comes to live with the Sieben Linden hueman theme child (http://github.com/ecovillage/ev7l-hueman-child-theme).
 
+Events can be pushed with a ruby script (https://github.com/ecovillage/ tba ).
+
 By Freundeskreis Sieben Linden e.V.
 
 ## Content
@@ -15,6 +17,26 @@ Use `create-wp-plugin-archive.sh` to create an uploaded plugin archive for Wordp
 ## Usage
 
 The plugin ships with a Widget to show events in a list, some query functions to access events in a loop and registers two query vars that can come handy when creating calendar like views (in a theme).
+
+## Description
+
+Events, Event Categories and Referees are modeled as Custom Post Types (CPT) with special Custom Fields.
+
+Following relationships exist:
+  1. Event <-> EventCategory (many-to-many)
+  2. Event <-> Referee (many-to-many)
+
+Spelled out:
+
+  - an **Event** can have multiple **EventCategory**s
+  - an **EventCategory** can have multiple **Events**
+  - an **Event** can have multiple **Referee**s
+  - a **Referee** can have multiple **Event**s
+
+Relationships are modeled with Custom Fields, storing the `Post ID` in a one-way fashion (it sits at the **Event**).
+
+Common to all three CPTs is an `UUID` field to uniquely identify an entity (but, as mentioned above, the `Post ID` is used for cross-references!).
+
 
 ## Lessons learned
 

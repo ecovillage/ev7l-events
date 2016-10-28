@@ -24,6 +24,7 @@ if ( ! defined( 'WPINC' ) ) {
   die;
 }
 
+/** Custom Post Types (CPT) */
 // Required files for registering the event post type.
 require plugin_dir_path( __FILE__ ) . 'includes/event/class-post-type.php';
 require plugin_dir_path( __FILE__ ) . 'includes/event/class-post-type-registration.php';
@@ -67,6 +68,7 @@ add_action('widgets_init',
       register_widget( 'EventListWidget' );
   });
 
+/** Query vars */
 // Query vars used for calendar view.
 function event_query_vars_filter($vars) {
   $vars[] = 'eventmonth';

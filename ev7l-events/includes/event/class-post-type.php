@@ -7,7 +7,7 @@
  */
 
 /**
- * Registration of CPT and related taxonomies.
+ * Registration of CPT.
  *
  * @since 0.0.1
  */

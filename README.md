@@ -18,6 +18,8 @@ Use `create-wp-plugin-archive.sh` to create an uploaded plugin archive for Wordp
 
 The plugin ships with a Widget to show events in a list, some query functions to access events in a loop and registers two query vars that can come handy when creating calendar like views (in a theme).
 
+An examplary theme can be found at the [7L hueman child theme](https://github.com/ecovillage/hueman-7l-child) .
+
 ## Description
 
 Events, Event Categories and Referees are modeled as Custom Post Types (CPT) with special Custom Fields (metadata).

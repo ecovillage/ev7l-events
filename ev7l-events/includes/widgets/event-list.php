@@ -11,11 +11,10 @@ class EventListWidget extends WP_Widget {
   // constructor
   public function __construct() {
     $details = array(
-      'classname' => 'EventListWidget',
+      'classname'   => 'EventListWidget',
       'description' => 'Show Events'
     );
     parent::__construct( 'EventListWidget', __('Event List Widget', 'ev7l-events'), $details );
-    //parent::__construct( 'EventListWidget', 'Event List Widget', $details );
   }
 
   // Widget backend form creation
@@ -24,11 +23,12 @@ class EventListWidget extends WP_Widget {
     echo 'displays events';
   }
 
-  // widget update
+  // Widget ("settings") update
   function update($new_instance, $old_instance) {
     return $new_instance;
   }
 
+  // Widget display
   function widget($args, $instance) {
     $events = upcoming_events();
     if ( $events->have_posts() ) {

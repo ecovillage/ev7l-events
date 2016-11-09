@@ -32,27 +32,28 @@ class EventListWidget extends WP_Widget {
   function widget($args, $instance) {
     $events = upcoming_events();
     if ( $events->have_posts() ) {
-      echo '<ul>';
+      echo '<div class="widget widget_ev7l_event_list_widget">';
+      echo '<ul class="ev7l_event_list">';
       $month = -1;
       $year = -1;
       foreach ( $events->get_posts() as $event ) {
         // New month?
         $start_month = date_i18n('F', get_post_meta($event->ID, 'fromdate', true));
         if ($month != $start_month) {
-          echo '<h2>' . $start_month . '</h2>';
+          echo '<h2 class="event-list-month-name">' . $start_month . '</h2>';
           $month = $start_month;
         }
         ?>
           <li>
-            <?php echo date('d.m', get_post_meta($event->ID, 'fromdate', true)); ?> bis <?php echo date('d.m', get_post_meta($event->ID, 'todate', true)); ?>
-              <a href="<?php echo get_permalink($event->ID); ?>"> <?php echo get_the_title($event->ID); ?></a>
+            <span class="eventdate"><?php echo date('d.m', get_post_meta($event->ID, 'fromdate', true)); ?> <!--bis <?php echo date('d.m', get_post_meta($event->ID, 'todate', true)); ?>--></span>
+              <a href="<?php echo get_permalink($event->ID); ?>" class="event-list-link"> <?php echo get_the_title($event->ID); ?></a>
           </li>
        <?php
       }
       echo '</ul>';
-    }
-
-  }
+      echo '</div>';
+    } // if $events->have_posts()
+  } // function widget
 }
 
 ?>

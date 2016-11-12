@@ -42,7 +42,7 @@ class EV7L_Event_Post_Type_Registration {
 			'add_new_item'       => __( 'Add Event',  'ev7l-events' ),
 			'edit_item'          => __( 'Edit Event', 'ev7l-events' ),
 			'new_item'           => __( 'New Event',  'ev7l-events' ),
-			'view_item'          => __( 'View Profile', 'ev7l-events' ),
+			'view_item'          => __( 'View Event', 'ev7l-events' ),
 			'search_items'       => __( 'Search Event', 'ev7l-events' ),
 			'not_found'          => __( 'No Events found', 'ev7l-events' ),
 			'not_found_in_trash' => __( 'No Events in the trash', 'ev7l-events' ),

@@ -42,7 +42,7 @@ class EV7L_Event_Category_Post_Type_Registrations {
 			'add_new_item'       => __( 'Add Event Category',  'ev7l-events' ),
 			'edit_item'          => __( 'Edit Event Category', 'ev7l-events' ),
 			'new_item'           => __( 'New Event Category',  'ev7l-events' ),
-			'view_item'          => __( 'View Profile Category', 'ev7l-events' ),
+			'view_item'          => __( 'View Category', 'ev7l-events' ),
 			'search_items'       => __( 'Search Event Category', 'ev7l-events' ),
 			'not_found'          => __( 'No Event Category found', 'ev7l-events' ),
 			'not_found_in_trash' => __( 'No Event Category in the trash', 'ev7l-events' ),

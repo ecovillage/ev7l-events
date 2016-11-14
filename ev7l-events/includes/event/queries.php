@@ -1,9 +1,9 @@
 <?php
-	/**
-	 * Queries upcoming events
-	 *
-	 * @since 0.0.1
-	 */
+/**
+ * Queries upcoming events
+ *
+ * @since 0.0.1
+ */
 function upcoming_events() {
   $events = new WP_Query( array(
     'post_type' => 'ev7l-event',

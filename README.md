@@ -22,7 +22,7 @@ An examplary theme can be found at the [7L hueman child theme](https://github.co
 
 ## Description
 
-Events, Event Categories and Referees are modeled as Custom Post Types (CPT) with special Custom Fields (metadata).
+Events (`ev7l-event`), Event Categories (`ev7l-event-category`) and Referees (`ev7l-referee`) are modeled as Custom Post Types (CPT) with special Custom Fields (metadata).
 
 Following relationships exist:
   1. Event <-> EventCategory (many-to-many)
@@ -43,12 +43,22 @@ Common to all three CPTs is an `UUID` field to uniquely identify an entity (but,
 
 Custom fields:
 
-| Field       | Multiple? | Semantic |
-| ----------- | --------- | -------- |
-| UUID        | false     | Unique identifier |
-| category_id | true      | post id of a event-category |
-| todate      | false     | starting date/time (as unix timestamp) |
-| fromdate    | false     | ending date/time (as unix timestamp) |
+| Field             | Multiple? | Semantic |
+| ----------------- | --------- | -------- |
+| UUID              | false     | Unique identifier |
+| event_category_id | true      | post id of an evl7-event-category |
+| todate            | false     | starting date/time (as unix timestamp) |
+| fromdate          | false     | ending date/time (as unix timestamp) |
+
+### CPT ev7l-event-category
+
+Custom fields:
+
+| Field             | Multiple? | Semantic |
+| ----------------- | --------- | -------- |
+| UUID              | false     | Unique identifier |
+| todate            | false     | starting date/time (as unix timestamp) |
+| fromdate          | false     | ending date/time (as unix timestamp) |
 
 ## Development
 

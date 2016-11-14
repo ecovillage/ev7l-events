@@ -11,7 +11,7 @@
  *
  * @package EV7L_Events
  */
-class EV7L_Event_Category_Post_Type_Registrations {
+class EV7L_Event_Category_Post_Type_Registration {
 
 	public $post_type = 'ev7l-event-category';
 

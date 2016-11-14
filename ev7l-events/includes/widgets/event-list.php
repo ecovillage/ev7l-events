@@ -40,13 +40,20 @@ class EventListWidget extends WP_Widget {
         // New month?
         $start_month = date_i18n('F', get_post_meta($event->ID, 'fromdate', true));
         if ($month != $start_month) {
-          echo '<h2 class="event-list-month-name">' . $start_month . '</h2>';
           $month = $start_month;
+          echo '</ul>';
+          echo '<h2 class="event-list-month-name">' . $month . '</h2>';
+          echo '<ul class="ev7l_event_list">';
         }
         ?>
           <li>
-            <span class="eventdate"><?php echo date('d.m', get_post_meta($event->ID, 'fromdate', true)); ?> <!--bis <?php echo date('d.m', get_post_meta($event->ID, 'todate', true)); ?>--></span>
-              <a href="<?php echo get_permalink($event->ID); ?>" class="event-list-link"> <?php echo get_the_title($event->ID); ?></a>
+            <span class="eventdate">
+              <?php echo date_i18n('d.m', get_post_meta($event->ID, 'fromdate', true)); ?>
+              <?php /* bis <?php echo date_i18n('d.m', get_post_meta($event->ID, 'todate', true)); */ ?>
+            </span>
+            <a href="<?php echo get_permalink($event->ID); ?>" class="event-list-link">
+              <?php echo get_the_title($event->ID); ?>
+            </a>
           </li>
        <?php
       }

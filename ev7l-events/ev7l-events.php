@@ -60,6 +60,23 @@ register_activation_hook( __FILE__, array( $post_type_c, 'activate' ) );
 $post_type_registration_c->init();
 
 
+// Required files for registering the referee post type.
+require plugin_dir_path( __FILE__ ) . 'includes/referee/class-post-type.php';
+require plugin_dir_path( __FILE__ ) . 'includes/referee/class-post-type-registration.php';
+
+// Instantiate registration class, so we can add it as a dependency to main plugin class.
+$post_type_registration_r = new EV7L_Referee_Post_Type_Registration;
+
+// Instantiate main plugin file, so activation callback does not need to be static.
+$post_type_r = new EV7L_Referee( $post_type_registration_r );
+
+// Register callback that is fired when the plugin is activated.
+register_activation_hook( __FILE__, array( $post_type_r, 'activate' ) );
+
+// Initialize registration for post-activation requests.
+$post_type_registration_r->init();
+
+
 /** Widgets */
 // Add some widgets, too.
 require plugin_dir_path( __FILE__ ) . 'includes/widgets/event-list.php';

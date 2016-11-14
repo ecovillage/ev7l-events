@@ -52,3 +52,33 @@ function events_in_year($eventyear) {
   return $events;
 }
 
+function events_in_category_op($category_post_id, $timecomp) {
+  $events = new WP_Query( array(
+    'post_type'  => 'ev7l-event',
+    'meta_query' => array(
+      'relation' => 'AND',
+      array(
+        'key'     => 'event_category_id',
+        'value'   => $category_post_id,
+        'compare' => '='
+      ),
+      array(
+        'key'     => 'fromdate',
+        'value'   => strtotime('today'),
+        'compare' => $timecomp
+      )
+    ),
+    'order'    => 'ASC',
+    'meta_key' => 'fromdate',
+    'orderby'  => 'meta_value',
+    'nopaging' => true) );
+  return $events;
+}
+
+function upcoming_events_in_category($category_post_id) {
+  return events_in_category_op($category_post_id, '>=');
+}
+
+function past_events_in_category($category_post_id) {
+  return events_in_category_op($category_post_id, '<=');
+}

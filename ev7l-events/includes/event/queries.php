@@ -115,9 +115,13 @@ function past_events_by_referee($referee_post_id) {
 }
 
 function referees_by_event($event_post_id) {
+  $referee_post_ids = get_post_meta($event_post_id, 'referee_id', false);
+  // Needs to be guarded (when nil return for post__in get_post_meta)
+  if (empty($referee_post_ids)) { $referee_post_ids = array(0); }
+
   $referees = new WP_Query( array(
     'post_type' => 'ev7l-referee',
-    'post__in'  => get_post_meta( $event_post_id, 'referee_id', false),
+    'post__in'  => $referee_post_ids,
     'nopaging'  => true) );
   return $referees;
 }

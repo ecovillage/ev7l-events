@@ -65,6 +65,10 @@ Custom fields:
 | todate            | false     | starting date/time (as unix timestamp) |
 | fromdate          | false     | ending date/time (as unix timestamp) |
 
+## Added functions
+
+In query, some functions are defined to ease theme development (for an example check the [7L hueman child theme](https://github.com/ecovillage/hueman-7l-child)).
+
 ## Development
 
 ### Releases
@@ -80,4 +84,7 @@ To release a new version follow these steps:
 ## Lessons learned
 
 PHP Class-Names cannot start with numerics (0..9).
+`post__in` means 'everything' if passed the result from a multiple meta_query that does not return anything.
+Awesome many-to-many example
+http://wordpress.stackexchange.com/questions/51386/many-to-many-relationship-between-two-custom-post-types
 

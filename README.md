@@ -43,14 +43,14 @@ Common to all three CPTs is an `UUID` field to uniquely identify an entity (but,
 
 Custom fields:
 
-| Field                      | Multiple? | Semantic |
-| -------------------------- | --------- | -------- |
-| UUID                       | false     | Unique identifier |
-| event_category_id          | true      | post id of an evl7-event-category |
-| referee_id                 | true      | post id of an evl7-referee |
-| referee_<id>_qualification | false     | post id of an evl7-referee |
-| todate                     | false     | starting date/time (as unix timestamp) |
-| fromdate                   | false     | ending date/time (as unix timestamp) |
+| Field                        | Multiple? | Semantic |
+| ---------------------------- | --------- | -------- |
+| UUID                         | false     | Unique identifier |
+| event_category_id            | true      | post id of an evl7-event-category |
+| referee_id                   | true      | post id of an evl7-referee |
+| referee_\<id\>_qualification | false     | post id of an evl7-referee |
+| todate                       | false     | starting date/time (as unix timestamp) |
+| fromdate                     | false     | ending date/time (as unix timestamp) |
 
 The `referee_<id>_qualification` field deserves separate explanation.  Here, `<id>` is to be replaced with the `Post-ID` of a given referee.
 That means, if your event has `'referee_id' => 412` and `'referee_id' => 821` there should be respective `referee_412_qualification` and `referee_821_qualification` fields describing the referees qualification specific for the given event.

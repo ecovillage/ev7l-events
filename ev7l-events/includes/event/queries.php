@@ -57,6 +57,27 @@ function events_in_year($eventyear) {
   return $events;
 }
 
+function events_in_year_month($eventyear, $eventmonth) {
+  $events = new WP_Query( array(
+    'post_type' => 'ev7l-event',
+    'meta_query' => array(
+      array(
+        'key' => 'fromdate',
+        'value' => strtotime($eventyear . $eventmonth . '01'),
+        'compare' => '>='
+      ),
+      array(
+        'key' => 'fromdate',
+        'value' => strtotime($eventyear . $eventmonth . '31'),
+        'compare' => '<='
+      )
+    ),
+    'order' => 'ASC',
+    'orderby' => 'meta_value',
+    'nopaging' => true) );
+  return $events;
+}
+
 function events_in_category_op($category_post_id, $timecomp) {
   $events = new WP_Query( array(
     'post_type'  => 'ev7l-event',

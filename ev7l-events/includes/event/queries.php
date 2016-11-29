@@ -44,6 +44,11 @@ function events_in_year($eventyear) {
         'key' => 'fromdate',
         'value' => strtotime($eventyear . '-1-1'),
         'compare' => '>='
+      ),
+      array(
+        'key' => 'fromdate',
+        'value' => strtotime($eventyear . '1231'),
+        'compare' => '<='
       )
     ),
     'order' => 'ASC',

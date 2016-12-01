@@ -2,11 +2,11 @@
 
 Event model as wordpress plugin for ecovillage Sieben Linden homepage (siebenlinden.org).
 
-Its functionality comes to live with the Sieben Linden hueman theme child (http://github.com/ecovillage/ev7l-hueman-child-theme).
+Its functionality comes to life with the Sieben Linden Hueman Child Theme (http://github.com/ecovillage/ev7l-hueman-child-theme).
 
-Events can be pushed with ruby scripts included in [wp_event](https://github.com/ecovillage/wp_event).
+Events can be pushed and updated with ruby scripts included in [wp_event](https://github.com/ecovillage/wp_event).
 
-By Freundeskreis Sieben Linden e.V.
+By Freundeskreis Sieben Linden e.V. (Germany).  Released under the GPLv3+ (or any later version) as included in the LICENSE file.
 
 ## Content
 

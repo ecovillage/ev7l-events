@@ -10,13 +10,13 @@ By Freundeskreis Sieben Linden e.V. (Germany).  Released under the GPLv3+ (or an
 
 ## Content
 
-Derived from https://github.com/devinsays/team-post-type .
-
 Use `create-wp-plugin-archive.sh` to create an uploaded plugin archive for Wordpress.
 
 ## Usage
 
 The plugin ships with a Widget to show events in a list, some query functions to access events in a loop and registers two query vars that can come handy when creating calendar like views (in a theme).
+
+To use the **calendar** you need a page called calendar.
 
 An examplary theme can be found at the [7L hueman child theme](https://github.com/ecovillage/hueman-7l-child) .
 
@@ -87,4 +87,9 @@ PHP Class-Names cannot start with numerics (0..9).
 `post__in` means 'everything' if passed the result from a multiple meta_query that does not return anything.
 Awesome many-to-many example
 http://wordpress.stackexchange.com/questions/51386/many-to-many-relationship-between-two-custom-post-types
+
+
+## Disclaimer
+
+Derived from https://github.com/devinsays/team-post-type .
 

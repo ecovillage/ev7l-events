@@ -58,17 +58,18 @@ function events_in_year($eventyear) {
 }
 
 function events_in_year_month($eventyear, $eventmonth) {
+  $month = str_pad($eventmonth, 2, '0', STR_PAD_LEFT);
   $events = new WP_Query( array(
     'post_type' => 'ev7l-event',
     'meta_query' => array(
       array(
         'key' => 'fromdate',
-        'value' => strtotime($eventyear . $eventmonth . '01'),
+        'value' => strtotime($eventyear . $month . '01'),
         'compare' => '>='
       ),
       array(
         'key' => 'fromdate',
-        'value' => strtotime($eventyear . $eventmonth . '31'),
+        'value' => strtotime($eventyear . $month . '31'),
         'compare' => '<='
       )
     ),

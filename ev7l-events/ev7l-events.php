@@ -94,3 +94,9 @@ function event_query_vars_filter($vars) {
 }
 add_filter( 'query_vars', 'event_query_vars_filter' );
 
+// Add metaboxes to pages, posts.
+require plugin_dir_path( __FILE__ ) . 'includes/event-category/class-post-type-metaboxes.php';
+// Initialize metaboxes
+$post_type_metaboxes = new Event_Category_Post_Type_7L_Metaboxes;
+$post_type_metaboxes->init();
+

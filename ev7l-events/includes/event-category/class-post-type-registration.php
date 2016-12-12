@@ -18,7 +18,22 @@ class EV7L_Event_Category_Post_Type_Registration {
 	public function init() {
 		// Add the event-category  post type.
 		add_action( 'init', array( $this, 'register' ) );
-	}
+    add_action ( 'pre_get_posts', array ($this, 'set_no_pagination'), 1, 1);
+  }
+
+	/**
+	 * Use pre_get_posts hook to disable pagination by setting a huge per_page limit. Also set order.
+	 *
+	 * @link http://codex.wordpress.org/Function_Reference/pre_get_posts
+	 */
+  public function set_no_pagination($query) {
+    if ( ! is_admin() && is_post_type_archive($this->post_type) && $query->is_main_query() )
+      {
+        $query->set( 'posts_per_page', 60000 );
+        $query->set( 'orderby',  'title');
+        $query->set( 'order',    'ASC');
+      }
+  }
 
 	/**
 	 * Initiate registrations of post type.

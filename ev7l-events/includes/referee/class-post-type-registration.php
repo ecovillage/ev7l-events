@@ -26,8 +26,24 @@ class EV7L_Referee_Post_Type_Registration {
 	 * @uses EV7L_Referee_Post_Type_Registrations::register_post_type()
 	 */
 	public function register() {
-		$this->register_post_type();
+    $this->register_post_type();
+    add_action ( 'pre_get_posts', array ($this, 'set_no_pagination'), 1, 1);
 	}
+
+	/**
+	 * Use pre_get_posts hook to disable pagination by setting a huge per_page limit. Also set order.
+	 *
+	 * @link http://codex.wordpress.org/Function_Reference/pre_get_posts
+	 */
+  public function set_no_pagination($query) {
+    if ( ! is_admin() && is_post_type_archive($this->post_type) && $query->is_main_query() )
+      {
+        $query->set( 'posts_per_page', 60000 );
+        $query->set( 'orderby',  'meta_value');
+        $query->set( 'meta_key', 'lastname');
+        $query->set( 'order',    'ASC');
+      }
+  }
 
 	/**
 	 * Register the custom post type.

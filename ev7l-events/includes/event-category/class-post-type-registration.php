@@ -75,6 +75,7 @@ class EV7L_Event_Category_Post_Type_Registration {
 			'labels'          => $labels,
 			'supports'        => $supports,
 			'public'          => true,
+			'has_archive'     => true,
 			'capability_type' => 'post',
 			'rewrite'         => array( 'slug' => 'event-category', ), // Permalinks format
 			'taxonomies'      => array( 'language' ), // language/polylang support

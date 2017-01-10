@@ -17,6 +17,7 @@
  * License:     AGPL-3.0+
  * License URI: http://www.gnu.org/licenses/agpl-3.0.txt
  * Domain Path: /languages
+ * GitHub Plugin URI: https://github.com/ecovillage/ev7l-events
  */
 
 // If this file is called directly, abort.

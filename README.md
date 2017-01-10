@@ -12,6 +12,10 @@ By Freundeskreis Sieben Linden e.V. (Germany).  Released under the GPLv3+ (or an
 
 Use `create-wp-plugin-archive.sh` to create an uploaded plugin archive for Wordpress.
 
+## Installation
+
+Until a propagation via wordpress' plugin repository is done, try using the [github updater plugin](https://github.com/afragen/github-updater/wiki/Installation).
+
 ## Usage
 
 The plugin ships with a Widget to show events in a list, some query functions to access events in a loop and registers two query vars that can come handy when creating calendar like views (in a theme).

@@ -21,6 +21,33 @@ function upcoming_events() {
 }
 
 /**
+ * Queries upcoming events in one or more categories.
+ *
+ * @since 0.0.3
+ */
+function upcoming_events_in_categories($category_id_array) {
+  $events = new WP_Query( array(
+    'post_type' => 'ev7l-event',
+    'meta_query' => array(
+      'relation' => 'AND',
+      array(
+        'key' => 'fromdate',
+        'value' => strtotime('today'),
+        'compare' => '>='
+      ),
+      array(
+        'key'     => 'event_category_id',
+        'value'   => $category_id_array,
+        'compare' => 'IN'
+      ),
+    ),
+    'order' => 'ASC',
+    'orderby' => 'meta_value',
+    'nopaging' => true) );
+  return $events;
+}
+
+/**
  * Queries past events
  *
  * @since 0.0.1

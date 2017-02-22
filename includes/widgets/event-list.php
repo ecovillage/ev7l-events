@@ -30,7 +30,22 @@ class EventListWidget extends WP_Widget {
 
   // Widget display
   function widget($args, $instance) {
-    $events = upcoming_events();
+    // Check for related categories,
+    // "ev7l_related_event_categories" (from posts metabox)
+    global $wp_query;
+    if (is_object($wp_query->queried_object) && $wp_query->queried_object->ID) {
+      //echo "<div>";
+      //$related_categories = get_post_meta($wp_query->queried_object->ID, 'ev7l_related_event_categories', false);
+      //echo var_export($related_categories);
+      //echo "</div>";
+      // query via array IN http://wordpress.stackexchange.com/questions/55354/how-can-i-create-a-meta-query-with-an-array-as-meta-field
+      $events = upcoming_events_in_categories($related_categories);
+    }
+    else {
+      // No related categories
+      $events = upcoming_events();
+    }
+
     if ( $events->have_posts() ) {
       echo '<div class="widget widget_ev7l_event_list_widget">';
       echo '<ul class="ev7l_event_list">';

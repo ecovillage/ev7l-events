@@ -1,6 +1,6 @@
 <?php
 /**
- *  Event Post Type
+ * Event Post Type
  *
  * @package   EV7L_Events
  * @license   AGPL-3.0+

@@ -10,7 +10,7 @@ By Freundeskreis Sieben Linden e.V. (Germany).  Released under the GPLv3+ (or an
 
 ## Content
 
-Use `create-wp-plugin-archive.sh` to create an uploaded plugin archive for Wordpress.
+Use `create-wp-plugin-archive.sh` to create an uploadable plugin archive for Wordpress.
 
 ## Installation
 
@@ -96,4 +96,3 @@ http://wordpress.stackexchange.com/questions/51386/many-to-many-relationship-bet
 ## Disclaimer
 
 Derived from https://github.com/devinsays/team-post-type .
-

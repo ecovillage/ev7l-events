@@ -81,9 +81,11 @@ $post_type_registration_r->init();
 /** Widgets */
 // Add some widgets, too.
 require plugin_dir_path( __FILE__ ) . 'includes/widgets/event-list.php';
+require plugin_dir_path( __FILE__ ) . 'includes/widgets/event-list-alx.php';
 add_action('widgets_init',
   function(){
       register_widget( 'EventListWidget' );
+      register_widget( 'EventListAlxWidget' );
   });
 
 /** Query vars */

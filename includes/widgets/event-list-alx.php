@@ -52,9 +52,11 @@ class EventListAlxWidget extends WP_Widget {
       echo '<ul class="ev7l_event_list alx-posts group thumbs-enabled">';
       $month = -1;
       $year = -1;
-      foreach ( $events->get_posts() as $event ) {
+      global $post;
+      while ( $events->have_posts() ) {
+        $events->the_post();
         // New month?
-        $start_month = date_i18n('F', get_post_meta($event->ID, 'fromdate', true));
+        $start_month = date_i18n('F', get_post_meta($post->ID, 'fromdate', true));
         if ($month != $start_month) {
           $month = $start_month;
           echo '</ul>';
@@ -64,7 +66,7 @@ class EventListAlxWidget extends WP_Widget {
         ?>
           <li>
             <div class="post-item-thumbnail">
-              <a href="<?php echo get_permalink($event->ID); ?>" title="<?php echo get_the_title($event->ID); ?>">
+              <a href="<?php echo get_permalink($post->ID); ?>" title="<?php echo get_the_title($post->ID); ?>">
               <svg class="hu-svg-placeholder thumb-medium-empty" id="58af4916a9b78" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg" style="opacity: 0.3;"><path d="M928 832q0-14-9-23t-23-9q-66 0-113 47t-47 113q0 14 9 23t23 9 23-9 9-23q0-40 28-68t68-28q14 0 23-9t9-23zm224 130q0 106-75 181t-181 75-181-75-75-181 75-181 181-75 181 75 75 181zm-1024 574h1536v-128h-1536v128zm1152-574q0-159-112.5-271.5t-271.5-112.5-271.5 112.5-112.5 271.5 112.5 271.5 271.5 112.5 271.5-112.5 112.5-271.5zm-1024-642h384v-128h-384v128zm-128 192h1536v-256h-828l-64 128h-644v128zm1664-256v1280q0 53-37.5 90.5t-90.5 37.5h-1536q-53 0-90.5-37.5t-37.5-90.5v-1280q0-53 37.5-90.5t90.5-37.5h1536q53 0 90.5 37.5t37.5 90.5z" style="stroke-dasharray: 18959, 18961; stroke-dashoffset: 0;"></path></svg>
 
               <script type="text/javascript">
@@ -82,20 +84,21 @@ class EventListAlxWidget extends WP_Widget {
               <p class="post-item-category"><a href="" rel="category tag">Veranstaltung</a>
               </p>
               <p class="post-item-title">
-                <a href="<?php echo get_permalink($event->ID); ?>" rel="bookmark" title="<?php echo get_the_title($event->ID); ?>"><?php echo get_the_title($event->ID); ?></a>
+                <a href="<?php echo get_permalink($post->ID); ?>" rel="bookmark" title="<?php echo get_the_title($post->ID); ?>"><?php echo get_the_title($post->ID); ?></a>
               </p>
               <p class="post-item-date">
-                <?php echo date_i18n('D, d.m', get_post_meta($event->ID, 'fromdate', true)); ?>
+                <?php echo date_i18n('D, d.m', get_post_meta($post->ID, 'fromdate', true)); ?>
                 -
-                <?php echo date_i18n('D, d.m.Y', get_post_meta($event->ID, 'todate', true)); ?>
+                <?php echo date_i18n('D, d.m.Y', get_post_meta($post->ID, 'todate', true)); ?>
               </p>
             </div>
           </li>
        <?php
-      }
+      } // while $events->have_posts()
       echo '</ul>';
       echo '</div>';
-      // Alternative: go with $posts as $post and reset_postdata, enable hu_the_post_thumbnail
+
+      wp_reset_postdata();
     } // if $events->have_posts()
   } // function widget
 }

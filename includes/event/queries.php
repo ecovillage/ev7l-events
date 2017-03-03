@@ -235,3 +235,14 @@ function referees_by_event($event_post_id) {
     'nopaging'  => true) );
   return $referees;
 }
+
+/**
+ * Returns true iff fromdate metadata of post is after the given timestamp.
+ *
+ * @since 0.1.2
+ */
+function ev7l_is_after($event_post_id, $date) {
+  $start_date = get_post_meta($event_post_id, 'fromdate', true);
+  $is_after = ($start_date > $date);
+  return $is_after;
+}

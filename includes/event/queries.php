@@ -4,7 +4,7 @@
  *
  * @since 0.0.1
  */
-function upcoming_events() {
+function upcoming_events($limit = 20) {
   $events = new WP_Query( array(
     'post_type' => 'ev7l-event',
     'meta_query' => array(
@@ -16,7 +16,8 @@ function upcoming_events() {
     ),
     'order' => 'ASC',
     'orderby' => 'meta_value',
-    'nopaging' => true) );
+    'posts_per_page' => $limit
+    ) );
   return $events;
 }
 

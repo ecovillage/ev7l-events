@@ -77,7 +77,7 @@ class EventListAlxWidget extends WP_Widget {
                     });
                   } else { $( '#58af4916a9b78' ).animateSvg( { svg_opacity : 0.3, filter_opacity : 0.5 } ); }
                 });
-              </script>
+              </script-->
               <?php hu_the_post_thumbnail('thumb-medium'); ?>
             </div>
             <div class="post-item-inner group">

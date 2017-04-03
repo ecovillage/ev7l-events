@@ -33,7 +33,7 @@ class EventListAlxWidget extends WP_Widget {
     // Check for related categories,
     // "ev7l_related_event_categories" (from posts metabox)
     global $wp_query;
-    if (is_object($wp_query->queried_object) && $wp_query->get_queried_object_id) {
+    if (is_object($wp_query->queried_object) && $wp_query->get_queried_object_id()) {
       $related_categories = get_post_meta($wp_query->queried_object->ID, 'ev7l_related_event_categories', false);
       //echo "<div>";
       //echo var_export($related_categories);

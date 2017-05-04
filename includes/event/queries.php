@@ -26,7 +26,7 @@ function upcoming_events($limit = 20) {
  *
  * @since 0.0.3
  */
-function upcoming_events_in_categories($category_id_array, $limit=20) {
+function upcoming_events_in_categories($category_id_array, $limit = 20) {
   $events = new WP_Query( array(
     'post_type' => 'ev7l-event',
     'meta_query' => array(

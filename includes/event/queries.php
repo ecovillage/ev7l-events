@@ -119,7 +119,8 @@ function events_in_year_month($eventyear, $eventmonth) {
     ),
     'order' => 'ASC',
     'orderby' => 'meta_value',
-    'nopaging' => true) );
+    'posts_per_page' => $limit
+    ) );
   return $events;
 }
 

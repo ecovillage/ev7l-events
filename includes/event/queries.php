@@ -22,6 +22,65 @@ function upcoming_events($limit = 20) {
 }
 
 /**
+ * Queries upcoming events in current year
+ *
+ * @since 0.2.1
+ */
+function upcoming_events_this_year() {
+  # "of december this year" might work, too
+  $end_of_year = strtotime("last day of december ".date('Y'));
+  $events = new WP_Query( array(
+    'post_type' => 'ev7l-event',
+    'meta_query' => array(
+      'relation' => 'AND',
+      array(
+        'key' => 'fromdate',
+        'value' => strtotime('today'),
+        'compare' => '>='
+      ),
+      array(
+        'key' => 'fromdate',
+        'value' => $end_of_year,
+        'compare' => '<='
+      )
+    ),
+    'order' => 'ASC',
+    'orderby' => 'meta_value',
+    'nopaging' => true,
+  ) );
+  return $events;
+}
+
+/**
+ * Queries past events in current year
+ *
+ * @since 0.2.1
+ */
+function past_events_this_year() {
+  $beginning_of_year = strtotime("first day of january". date('Y'));
+  $events = new WP_Query( array(
+    'post_type' => 'ev7l-event',
+    'meta_query' => array(
+      'relation' => 'AND',
+      array(
+        'key' => 'fromdate',
+        'value' => strtotime('today'),
+        'compare' => '<='
+      ),
+      array(
+        'key' => 'fromdate',
+        'value' => $beginning_of_year,
+        'compare' => '>='
+      )
+    ),
+    'order' => 'ASC',
+    'orderby' => 'meta_value',
+    'nopaging' => true,
+  ) );
+  return $events;
+}
+
+/**
  * Queries upcoming events in one or more categories.
  *
  * @since 0.0.3

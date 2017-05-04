@@ -44,7 +44,8 @@ function upcoming_events_in_categories($category_id_array, $limit = 20) {
     ),
     'order' => 'ASC',
     'orderby' => 'meta_value',
-    'nopaging' => true) );
+    'posts_per_page' => $limit
+    ) );
   return $events;
 }
 
@@ -91,8 +92,7 @@ function events_in_year($eventyear) {
     ),
     'order' => 'ASC',
     'orderby' => 'meta_value',
-    'posts_per_page' => $limit
-    ) );
+    'nopaging' => true) );
   return $events;
 }
 
@@ -119,8 +119,7 @@ function events_in_year_month($eventyear, $eventmonth) {
     ),
     'order' => 'ASC',
     'orderby' => 'meta_value',
-    'posts_per_page' => $limit
-    ) );
+    'nopaging' => true) );
   return $events;
 }
 

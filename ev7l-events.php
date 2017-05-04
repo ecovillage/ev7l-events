@@ -10,7 +10,7 @@
  * Plugin URI:  https://github.com/ecovillage/ev7l-events
  * Description: Enables post types 'Event', 'Event Category' and 'Referee',
  *              provides functionality like widgets to be used in views.
- * Version:     0.1.6
+ * Version:     0.1.7
  * Author:      Felix Wolfsteller
  * Author URI:  https://econya.de
  * Text Domain: 7l-event-post-type

@@ -13,7 +13,7 @@
  * Version:     0.2.1
  * Author:      Felix Wolfsteller
  * Author URI:  https://econya.de
- * Text Domain: 7l-event-post-type
+ * Text Domain: ev7l-events
  * License:     AGPL-3.0+
  * License URI: http://www.gnu.org/licenses/agpl-3.0.txt
  * Domain Path: /languages

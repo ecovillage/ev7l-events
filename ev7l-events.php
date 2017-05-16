@@ -103,3 +103,7 @@ require plugin_dir_path( __FILE__ ) . 'includes/event-category/class-post-type-m
 $post_type_metaboxes = new Event_Category_Post_Type_7L_Metaboxes;
 $post_type_metaboxes->init();
 
+function ev7l_load_textdomain() {
+load_plugin_textdomain( 'ev7l-events', false, dirname( plugin_basename(__FILE__) ) . '/languages/' );
+}
+add_action('plugins_loaded', 'ev7l_load_textdomain');

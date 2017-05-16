@@ -12,7 +12,7 @@ class EventListAlxWidget extends WP_Widget {
   public function __construct() {
     $details = array(
       'classname'   => 'EventListAlxWidget',
-      'description' => 'Show Events (Alx style)'
+      'description' => __('Show Events (Alx style)')
     );
     parent::__construct( 'EventListAlxWidget', __('Event List Alx Widget', 'ev7l-events'), $details );
   }
@@ -49,7 +49,9 @@ class EventListAlxWidget extends WP_Widget {
     if ( $events->have_posts() ) {
       echo '<div class="widget widget_ev7l_event_list_widget">';
       // move separate uls into loop
-      echo '<h4>Folgende Veranstaltungen könnten Dich vielleicht interessieren:</h4>';
+      echo '<h4>'; 
+	echo __('Folgende Veranstaltungen könnten Dich vielleicht interessieren:');
+      echo '</h4>';
       echo '<ul class="ev7l_event_list alx-posts group thumbs-enabled">';
       $month = -1;
       $year = -1;
@@ -71,7 +73,7 @@ class EventListAlxWidget extends WP_Widget {
               <?php hu_the_post_thumbnail('thumb-medium'); ?>
             </div>
             <div class="post-item-inner group">
-              <p class="post-item-category"><a href="" rel="category tag">Veranstaltung</a>
+              <p class="post-item-category"><a href="" rel="category tag"><?php echo __('Veranstaltung'); ?></a>
               </p>
               <p class="post-item-title">
                 <a href="<?php echo get_permalink($post->ID); ?>" rel="bookmark" title="<?php echo get_the_title($post->ID); ?>"><?php echo get_the_title($post->ID); ?></a>
@@ -86,7 +88,7 @@ class EventListAlxWidget extends WP_Widget {
        <?php
       } // while $events->have_posts()
       echo '</ul>';
-      echo '<div>... und viele weitere Veranstaltungen.</div>';
+      echo '<div>'.__('... und viele weitere Veranstaltungen.').'</div>';
       echo '</div>';
 
       wp_reset_postdata();

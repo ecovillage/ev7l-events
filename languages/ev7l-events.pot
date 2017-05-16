@@ -1,0 +1,158 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-05-16 06:22+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: \n"
+"Language: \n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco https://localise.biz/"
+
+#: includes/widgets/event-list.php:17
+msgid "Event List Widget"
+msgstr ""
+
+#: includes/widgets/event-list-alx.php:17
+msgid "Event List Alx Widget"
+msgstr ""
+
+#: includes/event/class-post-type-registration.php:39
+msgid "Events"
+msgstr ""
+
+#: includes/event/class-post-type-registration.php:40
+msgid "Event"
+msgstr ""
+
+#: includes/event/class-post-type-registration.php:41
+#: includes/event/class-post-type-registration.php:42
+msgid "Add Event"
+msgstr ""
+
+#: includes/event/class-post-type-registration.php:43
+msgid "Edit Event"
+msgstr ""
+
+#: includes/event/class-post-type-registration.php:44
+msgid "New Event"
+msgstr ""
+
+#: includes/event/class-post-type-registration.php:45
+msgid "View Event"
+msgstr ""
+
+#: includes/event/class-post-type-registration.php:46
+msgid "Search Event"
+msgstr ""
+
+#: includes/event/class-post-type-registration.php:47
+msgid "No Events found"
+msgstr ""
+
+#: includes/event/class-post-type-registration.php:48
+msgid "No Events in the trash"
+msgstr ""
+
+#: includes/referee/class-post-type-registration.php:55
+msgid "Referees"
+msgstr ""
+
+#: includes/referee/class-post-type-registration.php:56
+msgid "Referee"
+msgstr ""
+
+#: includes/referee/class-post-type-registration.php:57
+#: includes/referee/class-post-type-registration.php:58
+msgid "Add Referee"
+msgstr ""
+
+#: includes/referee/class-post-type-registration.php:59
+msgid "Edit Referee"
+msgstr ""
+
+#: includes/referee/class-post-type-registration.php:60
+msgid "New Referee"
+msgstr ""
+
+#: includes/referee/class-post-type-registration.php:61
+msgid "View Referee"
+msgstr ""
+
+#: includes/referee/class-post-type-registration.php:62
+msgid "Search Referee"
+msgstr ""
+
+#: includes/referee/class-post-type-registration.php:63
+msgid "No Referee found"
+msgstr ""
+
+#: includes/referee/class-post-type-registration.php:64
+msgid "No Referee in the trash"
+msgstr ""
+
+#: includes/event-category/class-post-type-metaboxes.php:61
+msgid "STRG/CTRL gedrückt halten für Mehrfachauswahl"
+msgstr ""
+
+#: includes/event-category/class-post-type-registration.php:54
+msgid "Event Categories"
+msgstr ""
+
+#: includes/event-category/class-post-type-registration.php:55
+msgid "Event Category"
+msgstr ""
+
+#: includes/event-category/class-post-type-registration.php:56
+#: includes/event-category/class-post-type-registration.php:57
+msgid "Add Event Category"
+msgstr ""
+
+#: includes/event-category/class-post-type-registration.php:58
+msgid "Edit Event Category"
+msgstr ""
+
+#: includes/event-category/class-post-type-registration.php:59
+msgid "New Event Category"
+msgstr ""
+
+#: includes/event-category/class-post-type-registration.php:60
+msgid "View Category"
+msgstr ""
+
+#: includes/event-category/class-post-type-registration.php:61
+msgid "Search Event Category"
+msgstr ""
+
+#: includes/event-category/class-post-type-registration.php:62
+msgid "No Event Category found"
+msgstr ""
+
+#: includes/event-category/class-post-type-registration.php:63
+msgid "No Event Category in the trash"
+msgstr ""
+
+#. Name of the plugin
+msgid "7L Events"
+msgstr ""
+
+#. Description of the plugin
+msgid "Enables post types 'Event', 'Event Category' and 'Referee',"
+msgstr ""
+
+#. URI of the plugin
+msgid "https://github.com/ecovillage/ev7l-events"
+msgstr ""
+
+#. Author of the plugin
+msgid "Felix Wolfsteller"
+msgstr ""
+
+#. Author URI of the plugin
+msgid "https://econya.de"
+msgstr ""

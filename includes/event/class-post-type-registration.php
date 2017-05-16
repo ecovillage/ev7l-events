@@ -61,7 +61,7 @@ class EV7L_Event_Post_Type_Registration {
 			'supports'        => $supports,
 			'public'          => true,
 			'capability_type' => 'post',
-			'rewrite'         => array( 'slug' => 'event', ), // Permalinks format
+			'rewrite'         => array( 'slug' => __('event'), ), // Permalinks format
 			'taxonomies'      => array( 'language' ), // polylang/ language support
 			'menu_position'   => 30,
 			'menu_icon'       => 'dashicons-id',

@@ -1,0 +1,163 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: ev7l-events-en_GB\n"
+"POT-Creation-Date: 2017-05-17 10:27+0100\n"
+"PO-Revision-Date: 2017-05-17 10:29+0100\n"
+"Last-Translator: G-oetz <g-h-l-w@gmx.de>\n"
+"Language-Team: Ecovollage7L\n"
+"Language: English\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.5.4\n"
+"X-Poedit-KeywordsList: _;gettext;gettext_noop;__\n"
+"X-Poedit-Basepath: ./home/gecko/work/ev7l-events\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-SearchPath-0: /home/gecko/work/ev7l-events\n"
+
+#: /home/gecko/work/ev7l-events/includes/event/class-post-type-registration.php:39
+msgid "Events"
+msgstr ""
+
+#: /home/gecko/work/ev7l-events/includes/event/class-post-type-registration.php:40
+msgid "Event"
+msgstr ""
+
+#: /home/gecko/work/ev7l-events/includes/event/class-post-type-registration.php:41
+#: /home/gecko/work/ev7l-events/includes/event/class-post-type-registration.php:42
+msgid "Add Event"
+msgstr ""
+
+#: /home/gecko/work/ev7l-events/includes/event/class-post-type-registration.php:43
+msgid "Edit Event"
+msgstr ""
+
+#: /home/gecko/work/ev7l-events/includes/event/class-post-type-registration.php:44
+msgid "New Event"
+msgstr ""
+
+#: /home/gecko/work/ev7l-events/includes/event/class-post-type-registration.php:45
+msgid "View Event"
+msgstr ""
+
+#: /home/gecko/work/ev7l-events/includes/event/class-post-type-registration.php:46
+msgid "Search Event"
+msgstr ""
+
+#: /home/gecko/work/ev7l-events/includes/event/class-post-type-registration.php:47
+msgid "No Events found"
+msgstr ""
+
+#: /home/gecko/work/ev7l-events/includes/event/class-post-type-registration.php:48
+msgid "No Events in the trash"
+msgstr ""
+
+#: /home/gecko/work/ev7l-events/includes/event/class-post-type-registration.php:64
+msgid "event"
+msgstr ""
+
+#: /home/gecko/work/ev7l-events/includes/event-category/class-post-type-registration.php:54
+msgid "Event Categories"
+msgstr ""
+
+#: /home/gecko/work/ev7l-events/includes/event-category/class-post-type-registration.php:55
+msgid "Event Category"
+msgstr ""
+
+#: /home/gecko/work/ev7l-events/includes/event-category/class-post-type-registration.php:56
+#: /home/gecko/work/ev7l-events/includes/event-category/class-post-type-registration.php:57
+msgid "Add Event Category"
+msgstr ""
+
+#: /home/gecko/work/ev7l-events/includes/event-category/class-post-type-registration.php:58
+msgid "Edit Event Category"
+msgstr ""
+
+#: /home/gecko/work/ev7l-events/includes/event-category/class-post-type-registration.php:59
+msgid "New Event Category"
+msgstr ""
+
+#: /home/gecko/work/ev7l-events/includes/event-category/class-post-type-registration.php:60
+msgid "View Category"
+msgstr ""
+
+#: /home/gecko/work/ev7l-events/includes/event-category/class-post-type-registration.php:61
+msgid "Search Event Category"
+msgstr ""
+
+#: /home/gecko/work/ev7l-events/includes/event-category/class-post-type-registration.php:62
+msgid "No Event Category found"
+msgstr ""
+
+#: /home/gecko/work/ev7l-events/includes/event-category/class-post-type-registration.php:63
+msgid "No Event Category in the trash"
+msgstr ""
+
+#: /home/gecko/work/ev7l-events/includes/event-category/class-post-type-registration.php:80
+msgid "event-category"
+msgstr ""
+
+#: /home/gecko/work/ev7l-events/includes/referee/class-post-type-registration.php:55
+msgid "Referees"
+msgstr ""
+
+#: /home/gecko/work/ev7l-events/includes/referee/class-post-type-registration.php:56
+msgid "Referee"
+msgstr ""
+
+#: /home/gecko/work/ev7l-events/includes/referee/class-post-type-registration.php:57
+#: /home/gecko/work/ev7l-events/includes/referee/class-post-type-registration.php:58
+msgid "Add Referee"
+msgstr ""
+
+#: /home/gecko/work/ev7l-events/includes/referee/class-post-type-registration.php:59
+msgid "Edit Referee"
+msgstr ""
+
+#: /home/gecko/work/ev7l-events/includes/referee/class-post-type-registration.php:60
+msgid "New Referee"
+msgstr ""
+
+#: /home/gecko/work/ev7l-events/includes/referee/class-post-type-registration.php:61
+msgid "View Referee"
+msgstr ""
+
+#: /home/gecko/work/ev7l-events/includes/referee/class-post-type-registration.php:62
+msgid "Search Referee"
+msgstr ""
+
+#: /home/gecko/work/ev7l-events/includes/referee/class-post-type-registration.php:63
+msgid "No Referee found"
+msgstr ""
+
+#: /home/gecko/work/ev7l-events/includes/referee/class-post-type-registration.php:64
+msgid "No Referee in the trash"
+msgstr ""
+
+#: /home/gecko/work/ev7l-events/includes/referee/class-post-type-registration.php:81
+msgid "referee"
+msgstr ""
+
+#: /home/gecko/work/ev7l-events/includes/widgets/event-list.php:17
+msgid "Event List Widget"
+msgstr ""
+
+#: /home/gecko/work/ev7l-events/includes/widgets/event-list-alx.php:15
+msgid "Show Events (Alx style)"
+msgstr ""
+
+#: /home/gecko/work/ev7l-events/includes/widgets/event-list-alx.php:17
+msgid "Event List Alx Widget"
+msgstr ""
+
+#: /home/gecko/work/ev7l-events/includes/widgets/event-list-alx.php:53
+msgid "Folgende Veranstaltungen könnten Dich vielleicht interessieren:"
+msgstr ""
+
+#: /home/gecko/work/ev7l-events/includes/widgets/event-list-alx.php:76
+msgid "Veranstaltung"
+msgstr ""
+
+#: /home/gecko/work/ev7l-events/includes/widgets/event-list-alx.php:91
+msgid "... und viele weitere Veranstaltungen."
+msgstr "... and many more events."

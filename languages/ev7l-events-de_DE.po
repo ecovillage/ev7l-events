@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ev7l-events-german\n"
-"POT-Creation-Date: 2017-05-17 09:32+0100\n"
-"PO-Revision-Date: 2017-05-17 09:32+0100\n"
+"POT-Creation-Date: 2017-05-17 09:33+0100\n"
+"PO-Revision-Date: 2017-05-17 09:41+0100\n"
 "Last-Translator: G-oetz <g-h-l-w@gmx.de>\n"
 "Language-Team: Ecovillage7L\n"
 "Language: German\n"
@@ -91,6 +91,10 @@ msgstr ""
 
 #: /home/gecko/work/ev7l-events/includes/event-category/class-post-type-registration.php:63
 msgid "No Event Category in the trash"
+msgstr ""
+
+#: /home/gecko/work/ev7l-events/includes/event-category/class-post-type-registration.php:80
+msgid "event-category"
 msgstr ""
 
 #: /home/gecko/work/ev7l-events/includes/referee/class-post-type-registration.php:55

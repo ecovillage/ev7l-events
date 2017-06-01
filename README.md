@@ -55,6 +55,18 @@ Custom fields:
 | referee_\<id\>_qualification | false     | post id of an evl7-referee |
 | todate                       | false     | starting date/time (as unix timestamp) |
 | fromdate                     | false     | ending date/time (as unix timestamp) |
+| registration_needed          | false     | whether a registration is needed (and form shall be shown) |
+| arrival                      | false     | arrival time/info |
+| departure                    | false     | departure time/info |
+| current_infos                | false     | current important information |
+| other_infos                  | false     | further information |
+| costs_participation          | false     | price of participation |
+| costs_catering               | false     | information / price of catering |
+| info_housing                 | false     | information / price of housing |
+| participants_please_bring    | false     | what participants should bring |
+| participants_prerequisites   | false     | what participants should fulfil |
+| cancel_conditions            | false     | conditions to accept for registration |
+
 
 The `referee_<id>_qualification` field deserves separate explanation.  Here, `<id>` is to be replaced with the `Post-ID` of a given referee.
 That means, if your event has `'referee_id' => 412` and `'referee_id' => 821` there should be respective `referee_412_qualification` and `referee_821_qualification` fields describing the referees qualification specific for the given event.
@@ -66,8 +78,17 @@ Custom fields:
 | Field             | Multiple? | Semantic |
 | ----------------- | --------- | -------- |
 | UUID              | false     | Unique identifier |
-| todate            | false     | starting date/time (as unix timestamp) |
-| fromdate          | false     | ending date/time (as unix timestamp) |
+
+### CPT ev7l-referee
+
+Custom fields:
+
+| Field             | Multiple? | Semantic |
+| ----------------- | --------- | -------- |
+| UUID              | false     | Unique identifier |
+| firstname         | false     | referees first name |
+| lastname          | false     | referees last name |
+| homepage          | false     | url of homepage of referee |
 
 ## Added functions
 

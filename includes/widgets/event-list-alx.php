@@ -73,7 +73,7 @@ class EventListAlxWidget extends WP_Widget {
               <?php hu_the_post_thumbnail('thumb-medium'); ?>
             </div>
             <div class="post-item-inner group">
-              <p class="post-item-category"><a href="" rel="category tag"><?php echo __('Veranstaltung'); ?></a>
+              <p class="post-item-category"><a href="<?php echo get_permalink($post->ID); ?>" rel="category tag"><?php echo __('Veranstaltung'); ?></a>
               </p>
               <p class="post-item-title">
                 <a href="<?php echo get_permalink($post->ID); ?>" rel="bookmark" title="<?php echo get_the_title($post->ID); ?>"><?php echo get_the_title($post->ID); ?></a>

@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ev7l-events-german\n"
-"POT-Creation-Date: 2017-05-17 09:33+0100\n"
-"PO-Revision-Date: 2017-05-17 09:41+0100\n"
+"POT-Creation-Date: 2017-05-17 10:49+0100\n"
+"PO-Revision-Date: 2017-05-17 10:50+0100\n"
 "Last-Translator: G-oetz <g-h-l-w@gmx.de>\n"
 "Language-Team: Ecovillage7L\n"
 "Language: German\n"
@@ -16,6 +16,7 @@ msgstr ""
 "X-Poedit-SearchPath-0: /home/gecko/work/ev7l-events\n"
 
 #: /home/gecko/work/ev7l-events/includes/event/class-post-type-registration.php:39
+#: /home/gecko/work/ev7l-events/includes/widgets/event-list-alx.php:76
 msgid "Events"
 msgstr "Veranstaltungen"
 
@@ -54,7 +55,7 @@ msgstr "Keine Veranstaltung im Papierkorb"
 
 #: /home/gecko/work/ev7l-events/includes/event/class-post-type-registration.php:64
 msgid "event"
-msgstr "Veranstaltung"
+msgstr "veranstaltung"
 
 #: /home/gecko/work/ev7l-events/includes/event-category/class-post-type-registration.php:54
 msgid "Event Categories"
@@ -151,13 +152,13 @@ msgid "Event List Alx Widget"
 msgstr ""
 
 #: /home/gecko/work/ev7l-events/includes/widgets/event-list-alx.php:53
-msgid "Folgende Veranstaltungen könnten Dich vielleicht interessieren:"
-msgstr ""
-
-#: /home/gecko/work/ev7l-events/includes/widgets/event-list-alx.php:76
-msgid "Veranstaltung"
+msgid "The following events may interest you:"
 msgstr ""
 
 #: /home/gecko/work/ev7l-events/includes/widgets/event-list-alx.php:91
-msgid "... und viele weitere Veranstaltungen."
-msgstr ""
+msgid "... and many more events."
+msgstr "... und viele weitere Veranstaltungen."
+
+#, fuzzy
+#~ msgid "events"
+#~ msgstr "veranstaltung"

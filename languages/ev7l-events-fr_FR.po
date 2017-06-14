@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ev7l-events\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-05-16 06:22+0000\n"
-"PO-Revision-Date: 2017-05-17 10:25+0100\n"
+"POT-Creation-Date: 2017-06-14 07:58+0100\n"
+"PO-Revision-Date: 2017-06-14 07:58+0100\n"
 "Last-Translator: G-oetz <g-h-l-w@gmx.de>\n"
 "Language-Team: Ecovillage7L\n"
 "Language: Francais\n"
@@ -17,145 +17,161 @@ msgstr ""
 "X-Poedit-SearchPath-0: .\n"
 "X-Poedit-SearchPath-1: ..\n"
 
-#: includes/widgets/event-list.php:17
-msgid "Event List Widget"
+#: ../ev7l-events.php:103
+msgid "Archives"
 msgstr ""
 
-#: includes/widgets/event-list-alx.php:17
-msgid "Event List Alx Widget"
-msgstr ""
-
-#: includes/event/class-post-type-registration.php:39
-msgid "Events"
-msgstr "événements"
-
-#: includes/event/class-post-type-registration.php:40
-msgid "Event"
-msgstr ""
-
-#: includes/event/class-post-type-registration.php:41
-#: includes/event/class-post-type-registration.php:42
-msgid "Add Event"
-msgstr ""
-
-#: includes/event/class-post-type-registration.php:43
-msgid "Edit Event"
-msgstr ""
-
-#: includes/event/class-post-type-registration.php:44
-msgid "New Event"
-msgstr ""
-
-#: includes/event/class-post-type-registration.php:45
-msgid "View Event"
-msgstr ""
-
-#: includes/event/class-post-type-registration.php:46
-msgid "Search Event"
-msgstr ""
-
-#: includes/event/class-post-type-registration.php:47
-msgid "No Events found"
-msgstr ""
-
-#: includes/event/class-post-type-registration.php:48
-msgid "No Events in the trash"
-msgstr ""
-
-#: includes/referee/class-post-type-registration.php:55
-msgid "Referees"
-msgstr ""
-
-#: includes/referee/class-post-type-registration.php:56
-msgid "Referee"
-msgstr ""
-
-#: includes/referee/class-post-type-registration.php:57
-#: includes/referee/class-post-type-registration.php:58
-msgid "Add Referee"
-msgstr ""
-
-#: includes/referee/class-post-type-registration.php:59
-msgid "Edit Referee"
-msgstr ""
-
-#: includes/referee/class-post-type-registration.php:60
-msgid "New Referee"
-msgstr ""
-
-#: includes/referee/class-post-type-registration.php:61
-msgid "View Referee"
-msgstr ""
-
-#: includes/referee/class-post-type-registration.php:62
-msgid "Search Referee"
-msgstr ""
-
-#: includes/referee/class-post-type-registration.php:63
-msgid "No Referee found"
-msgstr ""
-
-#: includes/referee/class-post-type-registration.php:64
-msgid "No Referee in the trash"
-msgstr ""
-
-#: includes/event-category/class-post-type-metaboxes.php:61
-msgid "STRG/CTRL gedrückt halten für Mehrfachauswahl"
-msgstr ""
-
-#: includes/event-category/class-post-type-registration.php:54
+#: ../includes/event-category/class-post-type-registration.php:54
 msgid "Event Categories"
 msgstr ""
 
-#: includes/event-category/class-post-type-registration.php:55
+#: ../includes/event-category/class-post-type-registration.php:55
 msgid "Event Category"
 msgstr ""
 
-#: includes/event-category/class-post-type-registration.php:56
-#: includes/event-category/class-post-type-registration.php:57
+#: ../includes/event-category/class-post-type-registration.php:56
+#: ../includes/event-category/class-post-type-registration.php:57
 msgid "Add Event Category"
 msgstr ""
 
-#: includes/event-category/class-post-type-registration.php:58
+#: ../includes/event-category/class-post-type-registration.php:58
 msgid "Edit Event Category"
 msgstr ""
 
-#: includes/event-category/class-post-type-registration.php:59
+#: ../includes/event-category/class-post-type-registration.php:59
 msgid "New Event Category"
 msgstr ""
 
-#: includes/event-category/class-post-type-registration.php:60
+#: ../includes/event-category/class-post-type-registration.php:60
 msgid "View Category"
 msgstr ""
 
-#: includes/event-category/class-post-type-registration.php:61
+#: ../includes/event-category/class-post-type-registration.php:61
 msgid "Search Event Category"
 msgstr ""
 
-#: includes/event-category/class-post-type-registration.php:62
+#: ../includes/event-category/class-post-type-registration.php:62
 msgid "No Event Category found"
 msgstr ""
 
-#: includes/event-category/class-post-type-registration.php:63
+#: ../includes/event-category/class-post-type-registration.php:63
 msgid "No Event Category in the trash"
 msgstr ""
 
-#. Name of the plugin
-msgid "7L Events"
+#: ../includes/event-category/class-post-type-registration.php:81
+msgid "event-category"
 msgstr ""
 
-#. Description of the plugin
-msgid "Enables post types 'Event', 'Event Category' and 'Referee',"
+#: ../includes/event-category/class-post-type-admin.php:50
+#: ../7l-event-post-type/includes/event/class-post-type-admin.php:50
+msgid "Image"
 msgstr ""
 
-#. URI of the plugin
-msgid "https://github.com/ecovillage/ev7l-events"
+#: ../includes/event/class-post-type-registration.php:39
+msgid "Events"
+msgstr "événements"
+
+#: ../includes/event/class-post-type-registration.php:40
+#: ../includes/widgets/event-list-alx.php:99
+msgid "Event"
 msgstr ""
 
-#. Author of the plugin
-msgid "Felix Wolfsteller"
+#: ../includes/event/class-post-type-registration.php:41
+#: ../includes/event/class-post-type-registration.php:42
+msgid "Add Event"
 msgstr ""
 
-#. Author URI of the plugin
-msgid "https://econya.de"
+#: ../includes/event/class-post-type-registration.php:43
+msgid "Edit Event"
+msgstr ""
+
+#: ../includes/event/class-post-type-registration.php:44
+msgid "New Event"
+msgstr ""
+
+#: ../includes/event/class-post-type-registration.php:45
+msgid "View Event"
+msgstr ""
+
+#: ../includes/event/class-post-type-registration.php:46
+msgid "Search Event"
+msgstr ""
+
+#: ../includes/event/class-post-type-registration.php:47
+msgid "No Events found"
+msgstr ""
+
+#: ../includes/event/class-post-type-registration.php:48
+msgid "No Events in the trash"
+msgstr ""
+
+#: ../includes/event/class-post-type-registration.php:66
+#, fuzzy
+msgid "event"
+msgstr "événements"
+
+#: ../includes/referee/class-post-type-registration.php:55
+msgid "Referees"
+msgstr ""
+
+#: ../includes/referee/class-post-type-registration.php:56
+msgid "Referee"
+msgstr ""
+
+#: ../includes/referee/class-post-type-registration.php:57
+#: ../includes/referee/class-post-type-registration.php:58
+msgid "Add Referee"
+msgstr ""
+
+#: ../includes/referee/class-post-type-registration.php:59
+msgid "Edit Referee"
+msgstr ""
+
+#: ../includes/referee/class-post-type-registration.php:60
+msgid "New Referee"
+msgstr ""
+
+#: ../includes/referee/class-post-type-registration.php:61
+msgid "View Referee"
+msgstr ""
+
+#: ../includes/referee/class-post-type-registration.php:62
+msgid "Search Referee"
+msgstr ""
+
+#: ../includes/referee/class-post-type-registration.php:63
+msgid "No Referee found"
+msgstr ""
+
+#: ../includes/referee/class-post-type-registration.php:64
+msgid "No Referee in the trash"
+msgstr ""
+
+#: ../includes/referee/class-post-type-registration.php:82
+msgid "referee"
+msgstr ""
+
+#: ../includes/widgets/event-list-alx.php:15
+msgid "Show Events (Alx style)"
+msgstr ""
+
+#: ../includes/widgets/event-list-alx.php:17
+msgid "Event List Alx Widget"
+msgstr ""
+
+#: ../includes/widgets/event-list-alx.php:65
+msgid "The following events may interest you:"
+msgstr ""
+
+#: ../includes/widgets/event-list-alx.php:114
+msgid "... and many more events."
+msgstr ""
+
+#: ../includes/widgets/event-list.php:17
+msgid "Event List Widget"
+msgstr ""
+
+#: ../7l-event-post-type/includes/event/class-dashboard-glancer.php:54
+msgid ""
+"Trying to add At a Glance items to dashboard widget afterhook already fired"
 msgstr ""

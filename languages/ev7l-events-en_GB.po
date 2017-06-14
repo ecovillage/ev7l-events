@@ -11,9 +11,10 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Poedit 1.5.4\n"
 "X-Poedit-KeywordsList: _;gettext;gettext_noop;__\n"
-"X-Poedit-Basepath: ./home/gecko/work/ev7l-events\n"
+"X-Poedit-Basepath: .\n"
 "X-Poedit-SourceCharset: UTF-8\n"
-"X-Poedit-SearchPath-0: /home/gecko/work/ev7l-events\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPath-1: ..\n"
 
 #: /home/gecko/work/ev7l-events/includes/event/class-post-type-registration.php:39
 #: /home/gecko/work/ev7l-events/includes/widgets/event-list-alx.php:76

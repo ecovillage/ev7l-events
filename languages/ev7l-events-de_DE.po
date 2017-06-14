@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ev7l-events-german\n"
-"POT-Creation-Date: 2017-06-14 07:57+0100\n"
-"PO-Revision-Date: 2017-06-14 07:59+0100\n"
+"POT-Creation-Date: 2017-06-14 08:33+0100\n"
+"PO-Revision-Date: 2017-06-14 08:33+0100\n"
 "Last-Translator: Felix Wolfsteller <felix.wolfsteller@gmail.com>\n"
 "Language-Team: Ecovillage7L\n"
 "Language: German\n"
@@ -127,15 +127,15 @@ msgstr ""
 
 #: ../includes/referee/class-post-type-registration.php:60
 msgid "New Referee"
-msgstr ""
+msgstr "Neue* Referent*"
 
 #: ../includes/referee/class-post-type-registration.php:61
 msgid "View Referee"
-msgstr ""
+msgstr "Referent* anzeigen"
 
 #: ../includes/referee/class-post-type-registration.php:62
 msgid "Search Referee"
-msgstr ""
+msgstr "Referent* suchen"
 
 #: ../includes/referee/class-post-type-registration.php:63
 msgid "No Referee found"
@@ -147,7 +147,7 @@ msgstr ""
 
 #: ../includes/referee/class-post-type-registration.php:82
 msgid "referee"
-msgstr ""
+msgstr "referent"
 
 #: ../includes/widgets/event-list-alx.php:15
 msgid "Show Events (Alx style)"

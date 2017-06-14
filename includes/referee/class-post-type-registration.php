@@ -78,7 +78,7 @@ class EV7L_Referee_Post_Type_Registration {
 			'public'          => true,
 			'has_archive'     => true,
 			'capability_type' => 'post',
-			'rewrite'         => array( 'slug' => __('referee'), ), // Permalinks format
+			'rewrite'         => array( 'slug' => __('referee', 'ev7l-events'), ), // Permalinks format
 			'taxonomies'      => array( 'language' ), // language/polylang support
 			'menu_position'   => 30,
 			'menu_icon'       => 'dashicons-id',

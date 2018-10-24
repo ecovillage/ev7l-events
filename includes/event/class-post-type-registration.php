@@ -51,6 +51,7 @@ class EV7L_Event_Post_Type_Registration {
 		$supports = array(
 			'title',
 			'editor',
+			'excerpt',
 			'thumbnail',
 			'custom-fields',
 			'revisions',

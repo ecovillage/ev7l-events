@@ -113,6 +113,8 @@ PHP Class-Names cannot start with numerics (0..9).
 Awesome many-to-many example
 http://wordpress.stackexchange.com/questions/51386/many-to-many-relationship-between-two-custom-post-types
 
+Either use magic or remember `var_dump` and `print_r`.
+
 
 ## Disclaimer
 

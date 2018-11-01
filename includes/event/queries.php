@@ -263,6 +263,28 @@ function events_by_referee_op($referee_post_id, $timecomp) {
 }
 
 /**
+ * Queries event by its UUID.
+ *
+ * @since 0.3.2
+ */
+function event_by_uuid($event_uuid) {
+  error_log('event_by_uuid: '.$event_uuid);
+  $event = new WP_Query( array(
+    'post_type'  => 'ev7l-event',
+    'meta_query' => array(
+      array(
+        'key'     => 'uuid',
+        'value'   => $event_uuid,
+        'compare' => '='
+      )
+    ),
+    'order'    => 'ASC',
+    'orderby'  => 'meta_value',
+    'nopaging' => true) );
+  return $event;
+}
+
+/**
  * Queries upcoming events of a referee
  *
  * @since 0.0.1

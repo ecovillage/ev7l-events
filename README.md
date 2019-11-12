@@ -53,8 +53,8 @@ Custom fields:
 | event_category_id            | true      | post id of an evl7-event-category |
 | referee_id                   | true      | post id of an evl7-referee |
 | referee_\<id\>_qualification | false     | post id of an evl7-referee |
-| todate                       | false     | starting date/time (as unix timestamp) |
-| fromdate                     | false     | ending date/time (as unix timestamp) |
+| fromdate                     | false     | starting date/time (as unix timestamp) |
+| todate                       | false     | ending date/time (as unix timestamp) |
 | registration_needed          | false     | whether a registration is needed (and form shall be shown) |
 | arrival                      | false     | arrival time/info |
 | departure                    | false     | departure time/info |

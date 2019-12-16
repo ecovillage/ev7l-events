@@ -115,6 +115,9 @@ http://wordpress.stackexchange.com/questions/51386/many-to-many-relationship-bet
 
 Either use magic or remember `var_dump` and `print_r`.
 
+Mixing PHP and HTML can get you into trouble - nobody seems to have a solution regarding indentation and mental health.  I hope I will get proven wrong.
+
+PHP folk loves tabs although not consistently.
 
 ## Disclaimer
 

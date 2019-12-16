@@ -25,11 +25,15 @@ if ( ! defined( 'WPINC' ) ) {
   die;
 }
 
+if(!defined('EV7L_EVENTS_PLUGIN_URL')) {
+  define('EV7L_EVENTS_PLUGIN_DIR', plugin_dir_path( __FILE__ ));
+}
+
 /** Custom Post Types (CPT) */
 // Required files for registering the event post type.
-require plugin_dir_path( __FILE__ ) . 'includes/event/class-post-type.php';
-require plugin_dir_path( __FILE__ ) . 'includes/event/class-post-type-registration.php';
-require plugin_dir_path( __FILE__ ) . 'includes/event/queries.php';
+require EV7L_EVENTS_PLUGIN_DIR . 'includes/event/class-post-type.php';
+require EV7L_EVENTS_PLUGIN_DIR . 'includes/event/class-post-type-registration.php';
+require EV7L_EVENTS_PLUGIN_DIR . 'includes/event/queries.php';
 
 // Instantiate registration class, so we can add it as a dependency to main plugin class.
 $post_type_registration = new EV7L_Event_Post_Type_Registration;
@@ -45,8 +49,8 @@ $post_type_registration->init();
 
 
 // Required files for registering the event category post type.
-require plugin_dir_path( __FILE__ ) . 'includes/event-category/class-post-type.php';
-require plugin_dir_path( __FILE__ ) . 'includes/event-category/class-post-type-registration.php';
+require EV7L_EVENTS_PLUGIN_DIR . 'includes/event-category/class-post-type.php';
+require EV7L_EVENTS_PLUGIN_DIR . 'includes/event-category/class-post-type-registration.php';
 
 // Instantiate registration class, so we can add it as a dependency to main plugin class.
 $post_type_registration_c = new EV7L_Event_Category_Post_Type_Registration;
@@ -62,8 +66,8 @@ $post_type_registration_c->init();
 
 
 // Required files for registering the referee post type.
-require plugin_dir_path( __FILE__ ) . 'includes/referee/class-post-type.php';
-require plugin_dir_path( __FILE__ ) . 'includes/referee/class-post-type-registration.php';
+require EV7L_EVENTS_PLUGIN_DIR . 'includes/referee/class-post-type.php';
+require EV7L_EVENTS_PLUGIN_DIR . 'includes/referee/class-post-type-registration.php';
 
 // Instantiate registration class, so we can add it as a dependency to main plugin class.
 $post_type_registration_r = new EV7L_Referee_Post_Type_Registration;
@@ -80,8 +84,8 @@ $post_type_registration_r->init();
 
 /** Widgets */
 // Add some widgets, too.
-require plugin_dir_path( __FILE__ ) . 'includes/widgets/event-list.php';
-require plugin_dir_path( __FILE__ ) . 'includes/widgets/event-list-alx.php';
+require EV7L_EVENTS_PLUGIN_DIR . 'includes/widgets/event-list.php';
+require EV7L_EVENTS_PLUGIN_DIR . 'includes/widgets/event-list-alx.php';
 add_action('widgets_init',
   function(){
       register_widget( 'EventListWidget' );
@@ -98,7 +102,7 @@ function event_query_vars_filter($vars) {
 add_filter( 'query_vars', 'event_query_vars_filter' );
 
 // Add metaboxes to pages, posts.
-require plugin_dir_path( __FILE__ ) . 'includes/event-category/class-post-type-metaboxes.php';
+require EV7L_EVENTS_PLUGIN_DIR . 'includes/event-category/class-post-type-metaboxes.php';
 // Initialize metaboxes
 $post_type_metaboxes = new Event_Category_Post_Type_7L_Metaboxes;
 $post_type_metaboxes->init();

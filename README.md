@@ -102,8 +102,10 @@ To release a new zip file to be used as uploadable wordpress plugin call `create
 
 To release a new version follow these steps:
 
-  * modify ev7l-events/ev7l-events.php to to use the correct version numner.
-  * e.g. `git tag -a "v0.2.0" -m "v0.2.0"`
+  * modify [ev7l-events/ev7l-events.php](ev7l-events/ev7l-events.php) to to use the correct version number.
+  * git commit -m "0.2.0"
+  * e.g. `git tag -a "0.2.0" -m "0.2.0"`
+  * `git push && git push --tags`
   * `./create-wp-plugin-archive.sh`
 
 ## Lessons learned

@@ -159,7 +159,7 @@ msgstr "Veranstaltungslisten (Alx) Widget"
 
 #: ../includes/widgets/event-list-alx.php:65
 msgid "The following events may interest you:"
-msgstr ""
+msgstr "Die folgenden Veranstalten könnten interessant für Dich sein:"
 
 #: ../includes/widgets/event-list-alx.php:114
 msgid "... and many more events."
